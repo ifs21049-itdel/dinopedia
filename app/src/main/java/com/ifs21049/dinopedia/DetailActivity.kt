@@ -19,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
 
         val btnDino = findViewById<TextView>(R.id.btnDino)
         btnDino.setOnClickListener {
-            val intent = Intent(this, DinoDetailActivity::class.java)
+            val intent = Intent(this, DinoActivity::class.java)
             startActivity(intent)
         }
 
