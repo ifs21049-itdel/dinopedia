@@ -1,0 +1,416 @@
+<resources>
+    <string name="app_name">Dino Pedia</string>
+
+    <!-- Informasi mengenai kelompok besar Dinosaurus -->
+    <string name="family_nama">Nama Family</string>
+    <string name="family_icon">Icon Family</string>
+    <string name="family_deskripsi">Deskripsi Family</string>
+    <string name="family_periode">Periode Hidup</string>
+    <string name="family_karakteristik">Karakteristik Family</string>
+    <string name="family_habitat">Habitat dan Lingkungan</string>
+    <string name="family_perilaku">Perilaku</string>
+    <string name="family_klasifikasi">Klasifikasi</string>
+
+    <string-array name="family_names">
+        <item>Ceratopsidae</item>
+        <item>Hadrosauridae</item>
+        <item>Stegosauridae</item>
+        <item>Ankylosauridae</item>
+        <item>Tyrannosauridae</item>
+        <item>Spinosauridae</item>
+        <item>Diplodocidae</item>
+        <item>Brachiosauridae</item>
+    </string-array>
+
+    <string-array name="family_icon">
+        <item>@drawable/family</item>
+        <item>@drawable/family2</item>
+        <item>@drawable/family3</item>
+        <item>@drawable/family4</item>
+        <item>@drawable/family5</item>
+        <item>@drawable/family6</item>
+        <item>@drawable/family7</item>
+        <item>@drawable/family8</item>
+    </string-array>
+
+    <string-array name="family_desc">
+        <item>Ceratopsidae adalah kelompok dinosaurus yang dikenal dengan tanduk besar di kepala mereka.</item>
+        <item>Hadrosauridae adalah kelompok dinosaurus yang dikenal dengan paruh seperti bebek mereka.</item>
+        <item>Stegosauridae adalah kelompok dinosaurus yang dikenal dengan lempeng-kepala dan duri-duri besar di punggung mereka.</item>
+        <item>Ankylosauridae adalah kelompok dinosaurus yang dikenal dengan tubuh dilindungi oleh lempengan tulang dan duri-duri, serta ekor yang kuat digunakan untuk pertahanan.</item>
+        <item>Tyrannosauridae adalah kelompok dinosaurus yang dikenal dengan rahang yang besar dan gigi yang kuat.</item>
+        <item>Spinosauridae adalah kelompok dinosaurus yang dikenal dengan hidung yang panjang dan rahang yang dipenuhi gigi panjang dan runcing.</item>
+        <item>Diplodocidae adalah kelompok dinosaurus yang terkenal dengan leher yang sangat panjang dan tubuh yang relatif kecil.</item>
+        <item>Brachiosauridae adalah kelompok dinosaurus yang dikenal dengan leher panjang yang membantu mereka mencapai makanan di daun pohon yang tinggi.</item>
+    </string-array>
+
+    <string-array name="family_period">
+        <item>Kisaran Cretaceous</item>
+        <item>Kisaran Cretaceous</item>
+        <item>Kisaran Jurassic hingga Cretaceous</item>
+        <item>Kisaran Jurassic hingga Cretaceous</item>
+        <item>Kisaran Cretaceous</item>
+        <item>Kisaran Cretaceous</item>
+        <item>Kisaran Jurassic hingga Cretaceous</item>
+        <item>Kisaran Jurassic hingga Cretaceous</item>
+    </string-array>
+
+    <string-array name="family_physical">
+        <item>Memiliki tanduk besar di kepala dan kadang-kadang memiliki lempeng-kepala.</item>
+        <item>Dilengkapi dengan paruh yang lebar dan rapi, cocok untuk merobek dan mengunyah tumbuhan.</item>
+        <item>Dilapisi dengan lempeng-kepala dan duri-duri besar di punggung.</item>
+        <item>Tubuh dilindungi oleh lempengan tulang dan duri-duri, serta ekor yang kuat digunakan untuk pertahanan.</item>
+        <item>Memiliki rahang yang besar dan gigi yang kuat, dengan tubuh yang besar dan cakar yang kuat.</item>
+        <item>Cenderung memiliki hidung yang panjang dan rahang yang dipenuhi gigi panjang dan runcing.</item>
+        <item>Terkenal dengan leher yang sangat panjang dan tubuh yang relatif kecil, dengan ekor yang panjang dan ramping.</item>
+        <item>Memiliki leher panjang yang membantu mereka mencapai makanan di daun pohon yang tinggi, dengan tubuh besar dan berat.</item>
+    </string-array>
+
+    <string-array name="family_habitat">
+        <item>Daratan</item>
+        <item>Dataran banjir dan rawa-rawa</item>
+        <item>Daratan</item>
+        <item>Daratan</item>
+        <item>Daratan</item>
+        <item>Dataran banjir dan rawa-rawa</item>
+        <item>Daratan</item>
+        <item>Daratan</item>
+    </string-array>
+
+    <string-array name="family_behavior">
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+        <item>Karnivora</item>
+        <item>Karnivora</item>
+        <item>Herbivora</item>
+        <item>Herbivora</item>
+    </string-array>
+
+    <string-array name="family_classification">
+        <item>Ornithischia</item>
+        <item>Ornithischia</item>
+        <item>Ornithischia</item>
+        <item>Ornithischia</item>
+        <item>Saurischia</item>
+        <item>Saurischia</item>
+        <item>Saurischia</item>
+        <item>Saurischia</item>
+    </string-array>
+
+
+    <string name="dino_nama">Nama dino</string>
+    <string name="dino_icon">Icon dino</string>
+    <string name="dino_deskripsi">Deskripsi dino</string>
+    <string name="dino_karakteristik">Karakteristik dino</string>
+    <string name="dino_kelompok">Kelompok</string>
+    <string name="dino_habitat">Habitat</string>
+    <string name="dino_makanan">Makanan</string>
+    <string name="dino_panjang">Panjang</string>
+    <string name="dino_tinggi">Tinggi</string>
+    <string name="dino_bobot">Bobot</string>
+    <string name="dino_kelemahan">Kelemahan</string>
+
+    <string-array name="dino_species">
+        <item>Triceratops</item>
+        <item>Styracosaurus</item>
+        <item>Edmontosaurus</item>
+        <item>Parasaurolophus</item>
+        <item>Stegosaurus</item>
+        <item>Kentrosaurus</item>
+        <item>Ankylosaurus</item>
+        <item>Euoplocephalus</item>
+        <item>Tyrannosaurus Rex</item>
+        <item>Albertosaurus</item>
+        <item>Spinosaurus</item>
+        <item>Baryonyx</item>
+        <item>Diplodocus</item>
+        <item>Apatosaurus</item>
+    </string-array>
+
+    <string-array name="dino_icon">
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+        <item>@drawable/dino</item>
+    </string-array>
+
+    <string-array name="dino_desc">
+        <!-- Deskripsi Triceratops -->
+        <item>Triceratops adalah dinosaurus besar dengan tiga tanduk di kepala dan sebuah lempeng-kepala di bagian belakang.</item>
+        <!-- Deskripsi Styracosaurus -->
+        <item>Styracosaurus adalah dinosaurus dengan sebuah tanduk di hidung dan sejumlah tanduk lainnya di sekeliling lempeng-kepala.</item>
+        <!-- Deskripsi Edmontosaurus -->
+        <item>Edmontosaurus adalah dinosaurus herbivora yang besar dan berat, dengan paruh seperti bebek yang khas.</item>
+        <!-- Deskripsi Parasaurolophus -->
+        <item>Parasaurolophus adalah dinosaurus dengan crested yang mencolok di kepala yang berfungsi sebagai saluran suara.</item>
+        <!-- Deskripsi Stegosaurus -->
+        <item>Stegosaurus adalah dinosaurus dengan punggung yang dilapisi dengan duri besar atau lempengan tulang yang menonjol.</item>
+        <!-- Deskripsi Kentrosaurus -->
+        <item>Kentrosaurus adalah dinosaurus dengan duri-duri tajam di punggung dan ekor yang kuat yang digunakan untuk pertahanan.</item>
+        <!-- Deskripsi Ankylosaurus -->
+        <item>Ankylosaurus adalah dinosaurus dengan tubuh dilindungi oleh lempengan tulang dan duri-duri, serta memiliki sebuah ekor yang kuat dan dilapisi oleh lempengan tulang yang besar.</item>
+        <!-- Deskripsi Euoplocephalus -->
+        <item>Euoplocephalus adalah dinosaurus dengan tubuh yang dilindungi oleh lempengan tulang dan duri-duri, serta memiliki sebuah bola tulang di ujung ekor yang digunakan untuk pertahanan.</item>
+        <!-- Deskripsi Tyrannosaurus Rex -->
+        <item>Tyrannosaurus Rex adalah dinosaurus karnivora raksasa yang dikenal dengan rahang yang besar dan gigi-gigi yang tajam.</item>
+        <!-- Deskripsi Albertosaurus -->
+        <item>Albertosaurus adalah dinosaurus karnivora yang lebih kecil dari Tyrannosaurus Rex, namun tetap merupakan predator yang menakutkan.</item>
+        <!-- Deskripsi Spinosaurus -->
+        <item>Spinosaurus adalah dinosaurus karnivora yang memiliki ciri khas berupa sail di punggungnya.</item>
+        <!-- Deskripsi Baryonyx -->
+        <item>Baryonyx adalah dinosaurus karnivora yang memiliki rahang yang panjang dan sempit, serta cakar yang besar.</item>
+        <!-- Deskripsi Diplodocus -->
+        <item>Diplodocus adalah dinosaurus herbivora yang memiliki leher yang panjang dan tubuh yang besar.</item>
+        <!-- Deskripsi Apatosaurus -->
+        <item>Apatosaurus, juga dikenal sebagai Brontosaurus, adalah dinosaurus dengan tubuh besar dan leher yang panjang.</item>
+    </string-array>
+
+    <string-array name="dino_characteristics">
+        <!-- Karakteristik Triceratops -->
+        <item>Memiliki tubuh besar dan berat, tanduk-tanduk tajam di kepala, lempeng-kepala yang menonjol, dan kaki yang kuat.</item>
+        <!-- Karakteristik Styracosaurus -->
+        <item>Memiliki lempeng-kepala dengan tanduk-tanduk tajam, tanduk besar di hidung, tubuh besar dengan kaki yang kokoh.</item>
+        <!-- Karakteristik Edmontosaurus -->
+        <item>Memiliki tubuh besar dengan kaki yang kokoh, kepala yang relatif kecil dengan paruh yang lebar dan datar, serta ekor yang panjang dan ramping.</item>
+        <!-- Karakteristik Parasaurolophus -->
+        <item>Memiliki tubuh yang besar dengan kaki yang kokoh, kepala yang relatif kecil dengan crested yang panjang di bagian belakang, dan ekor yang panjang.</item>
+        <!-- Karakteristik Stegosaurus -->
+        <item>Memiliki punggung yang dilapisi dengan duri besar atau lempengan tulang yang menonjol, serta ekor yang dilengkapi dengan duri-duri tajam.</item>
+        <!-- Karakteristik Kentrosaurus -->
+        <item>Memiliki duri-duri tajam di punggung dan ekor yang kuat yang digunakan untuk pertahanan, serta tubuh yang kokoh.</item>
+        <!-- Karakteristik Ankylosaurus -->
+        <item>Memiliki tubuh yang rendah dan dilindungi oleh lempengan tulang, dengan duri-duri besar yang menonjol di bagian samping tubuh dan ekor yang dilapisi oleh lempengan tulang.</item>
+        <!-- Karakteristik Euoplocephalus -->
+        <item>Memiliki tubuh yang dilindungi oleh lempengan tulang dan duri-duri besar di bagian samping tubuh, serta sebuah bola tulang besar di ujung ekor.</item>
+        <!-- Karakteristik Tyrannosaurus Rex -->
+        <item>Memiliki tubuh besar dengan rahang yang kuat dan gigi-gigi yang panjang dan runcing, cakar yang besar, serta kaki yang kokoh.</item>
+        <!-- Karakteristik Albertosaurus -->
+        <item>Memiliki tubuh yang kokoh dengan rahang yang kuat dan gigi-gigi yang tajam, cakar yang besar, serta kaki yang kokoh untuk mengejar mangsanya.</item>
+        <!-- Karakteristik Spinosaurus -->
+        <item>Memiliki sail di punggungnya, rahang yang panjang, dan tubuh yang besar.</item>
+        <!-- Karakteristik Baryonyx -->
+        <item>Memiliki rahang yang panjang dan sempit, cakar yang besar, dan tubuh yang kokoh.</item>
+        <!-- Karakteristik Diplodocus -->
+        <item>Memiliki leher yang panjang, tubuh yang besar, dan ekor yang panjang.</item>
+        <!-- Karakteristik Apatosaurus -->
+        <item>Memiliki tubuh besar dengan leher yang panjang dan ekor yang panjang.</item>
+    </string-array>
+
+    <string-array name="dino_group">
+        <item>Ceratopsidae</item>
+        <item>Ceratopsidae</item>
+        <item>Hadrosauridae</item>
+        <item>Hadrosauridae</item>
+        <item>Stegosauridae</item>
+        <item>Stegosauridae</item>
+        <item>Ankylosauridae</item>
+        <item>Ankylosauridae</item>
+        <item>Tyrannosauridae</item>
+        <item>Tyrannosauridae</item>
+        <item>Spinosauridae</item>
+        <item>Spinosauridae</item>
+        <item>Diplodocidae</item>
+        <item>Diplodocidae</item>
+    </string-array>
+
+    <string-array name="dino_habitat">
+        <!-- Habitat Triceratops -->
+        <item>Tinggal di dataran dan padang rumput pada periode Cretaceous.</item>
+        <!-- Habitat Styracosaurus -->
+        <item>Biasa ditemukan di daratan pada periode Cretaceous.</item>
+        <!-- Habitat Edmontosaurus -->
+        <item>Biasanya ditemukan di dataran banjir dan rawa-rawa pada periode Cretaceous.</item>
+        <!-- Habitat Parasaurolophus -->
+        <item>Sering menghuni dataran banjir dan padang rumput pada periode Cretaceous.</item>
+        <!-- Habitat Stegosaurus -->
+        <item>Sering dijumpai di daratan pada periode Jurassic hingga Cretaceous.</item>
+        <!-- Habitat Kentrosaurus -->
+        <item>Tinggal di daerah daratan pada periode Jurassic hingga Cretaceous, seringkali berada di hutan atau padang rumput.</item>
+        <!-- Habitat Ankylosaurus -->
+        <item>Tinggal di dataran dan hutan pada periode Cretaceous.</item>
+        <!-- Habitat Euoplocephalus -->
+        <item>Umumnya ditemukan di dataran banjir dan hutan pada periode Cretaceous.</item>
+        <!-- Habitat Tyrannosaurus Rex -->
+        <item>Sering ditemukan di daerah daratan dan hutan pada periode Cretaceous.</item>
+        <!-- Habitat Albertosaurus -->
+        <item>Biasanya ditemukan di dataran dan hutan pada periode Cretaceous.</item>
+        <!-- Habitat Spinosaurus -->
+        <item>Umumnya hidup di wilayah perairan seperti sungai, danau, atau rawa-rawa pada periode Cretaceous.</item>
+        <!-- Habitat Baryonyx -->
+        <item>Sering ditemukan di daerah rawa-rawa atau tepi sungai pada periode Cretaceous.</item>
+        <!-- Habitat Diplodocus -->
+        <item>Umumnya ditemukan di daerah dataran tinggi dan pegunungan pada periode Jurassic.</item>
+        <!-- Habitat Apatosaurus -->
+        <item>Sering menghuni dataran rendah dan hutan pada periode Jurassic.</item>
+    </string-array>
+
+    <string-array name="dino_food">
+        <!-- Makanan Triceratops -->
+        <item>Herbivora, memakan berbagai jenis tumbuhan rendah dan semak.</item>
+        <!-- Makanan Styracosaurus -->
+        <item>Herbivora, sering mengkonsumsi semak dan tumbuhan rendah.</item>
+        <!-- Makanan Edmontosaurus -->
+        <item>Herbivora, sering mengkonsumsi tumbuhan rendah dan semak di sekitar air.</item>
+        <!-- Makanan Parasaurolophus -->
+        <item>Herbivora, memakan berbagai jenis tumbuhan dan dedaunan di sekitar padang rumput.</item>
+        <!-- Makanan Stegosaurus -->
+        <item>Herbivora, sering mengkonsumsi tumbuhan rendah dan semak di sekitar hutan dan padang rumput.</item>
+        <!-- Makanan Kentrosaurus -->
+        <item>Herbivora, memakan dedaunan dan tumbuhan rendah di sekitar padang rumput dan hutan.</item>
+        <!-- Makanan Ankylosaurus -->
+        <item>Herbivora, umumnya memakan tumbuhan rendah, semak, dan beberapa jenis tanaman keras.</item>
+        <!-- Makanan Euoplocephalus -->
+        <item>Herbivora, memakan tumbuhan rendah, semak, dan beberapa jenis tanaman keras.</item>
+        <!-- Makanan Tyrannosaurus Rex -->
+        <item>Karnivora, memakan berbagai jenis hewan yang dapat mereka tangkap, termasuk dinosaurus herbivora dan mamalia kecil.</item>
+        <!-- Makanan Albertosaurus -->
+        <item>Karnivora, memakan berbagai jenis hewan kecil dan dinosaurus herbivora yang dapat mereka tangkap.</item>
+        <!-- Makanan Spinosaurus -->
+        <item>Karnivora, memakan ikan dan hewan-hewan kecil yang ada di perairan.</item>
+        <!-- Makanan Baryonyx -->
+        <item>Karnivora, memakan ikan dan hewan-hewan kecil yang ada di sekitar perairan.</item>
+        <!-- Makanan Diplodocus -->
+        <item>Herbivora, memakan daun dan tumbuhan tingkat rendah di sekitar dataran tinggi.</item>
+        <!-- Makanan Apatosaurus -->
+        <item>Herbivora, sering memakan dedaunan dan tumbuhan rendah di sekitar daerah hutan.</item>
+    </string-array>
+
+    <string-array name="dino_length">
+        <!-- Panjang Triceratops -->
+        <item>Sekitar 8-9 meter.</item>
+        <!-- Panjang Styracosaurus -->
+        <item>Sekitar 5-6 meter.</item>
+        <!-- Panjang Edmontosaurus -->
+        <item>Sekitar 9-12 meter.</item>
+        <!-- Panjang Parasaurolophus -->
+        <item>Sekitar 9-10 meter.</item>
+        <!-- Panjang Stegosaurus -->
+        <item>Sekitar 7-9 meter.</item>
+        <!-- Panjang Kentrosaurus -->
+        <item>Sekitar 5-6 meter.</item>
+        <!-- Panjang Ankylosaurus -->
+        <item>Sekitar 6-8 meter.</item>
+        <!-- Panjang Euoplocephalus -->
+        <item>Sekitar 6-7 meter.</item>
+        <!-- Panjang Tyrannosaurus Rex -->
+        <item>Sekitar 12-14 meter.</item>
+        <!-- Panjang Albertosaurus -->
+        <item>Sekitar 9-10 meter.</item>
+        <!-- Panjang Spinosaurus -->
+        <item>Sekitar 12-15 meter.</item>
+        <!-- Panjang Baryonyx -->
+        <item>Sekitar 8-10 meter.</item>
+        <!-- Panjang Diplodocus -->
+        <item>Sekitar 25-30 meter.</item>
+        <!-- Panjang Apatosaurus -->
+        <item>Sekitar 21-26 meter.</item>
+    </string-array>
+
+    <string-array name="dino_height">
+        <!-- Tinggi Triceratops -->
+        <item>Sekitar 3 meter pada bahu.</item>
+        <!-- Tinggi Styracosaurus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Edmontosaurus -->
+        <item>Sekitar 3-4 meter pada bahu.</item>
+        <!-- Tinggi Parasaurolophus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Stegosaurus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Kentrosaurus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Ankylosaurus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Euoplocephalus -->
+        <item>Sekitar 2-3 meter pada bahu.</item>
+        <!-- Tinggi Tyrannosaurus Rex -->
+        <item>Sekitar 4-6 meter pada pangkal ekor.</item>
+        <!-- Tinggi Albertosaurus -->
+        <item>Sekitar 3-4 meter pada pangkal ekor.</item>
+        <!-- Tinggi Spinosaurus -->
+        <item>Sekitar 4-5 meter pada pangkal ekor.</item>
+        <!-- Tinggi Baryonyx -->
+        <item>Sekitar 3-4 meter pada pangkal ekor.</item>
+        <!-- Tinggi Diplodocus -->
+        <item>Sekitar 4-5 meter pada pangkal ekor.</item>
+        <!-- Tinggi Apatosaurus -->
+        <item>Sekitar 4-5 meter pada pangkal ekor.</item>
+    </string-array>
+
+    <string-array name="dino_weight">
+        <!-- Berat Triceratops -->
+        <item>Diperkirakan sekitar 6-8 ton.</item>
+        <!-- Berat Styracosaurus -->
+        <item>Diperkirakan sekitar 3-4 ton.</item>
+        <!-- Berat Edmontosaurus -->
+        <item>Diperkirakan sekitar 4-5 ton.</item>
+        <!-- Berat Parasaurolophus -->
+        <item>Diperkirakan sekitar 3-4 ton.</item>
+        <!-- Berat Stegosaurus -->
+        <item>Diperkirakan sekitar 2-4 ton.</item>
+        <!-- Berat Kentrosaurus -->
+        <item>Diperkirakan sekitar 1-2 ton.</item>
+        <!-- Berat Ankylosaurus -->
+        <item>Diperkirakan sekitar 4-6 ton.</item>
+        <!-- Berat Euoplocephalus -->
+        <item>Diperkirakan sekitar 3-4 ton.</item>
+        <!-- Berat Tyrannosaurus Rex -->
+        <item>Diperkirakan sekitar 7-9 ton.</item>
+        <!-- Berat Albertosaurus -->
+        <item>Diperkirakan sekitar 2-4 ton.</item>
+        <!-- Berat Spinosaurus -->
+        <item>Diperkirakan sekitar 6-8 ton.</item>
+        <!-- Berat Baryonyx -->
+        <item>Diperkirakan sekitar 2-4 ton.</item>
+        <!-- Berat Diplodocus -->
+        <item>Diperkirakan sekitar 10-15 ton.</item>
+        <!-- Berat Apatosaurus -->
+        <item>Diperkirakan sekitar 15-20 ton.</item>
+    </string-array>
+
+    <string-array name="dino_weakness">
+        <!-- Kelemahan Triceratops -->
+        <item>Mobilitas yang rendah, rentan terhadap serangan predator dari samping.</item>
+        <!-- Kelemahan Styracosaurus -->
+        <item>Rentan terhadap serangan predator dari atas karena tanduknya yang besar dapat membatasi gerakan kepala.</item>
+        <!-- Kelemahan Edmontosaurus -->
+        <item>Rentan terhadap serangan predator saat berada di daerah rawa yang terbatas untuk bergerak.</item>
+        <!-- Kelemahan Parasaurolophus -->
+        <item>Creasted panjangnya dapat membuatnya rentan terhadap cedera saat bergerak cepat dalam lingkungan yang penuh rintangan.</item>
+        <!-- Kelemahan Stegosaurus -->
+        <item>Area perut dan leher yang rentan terhadap serangan predator.</item>
+        <!-- Kelemahan Kentrosaurus -->
+        <item>Mobilitas yang rendah, rentan terhadap serangan predator dari samping.</item>
+        <!-- Kelemahan Ankylosaurus -->
+        <item>Mobilitas yang rendah karena tubuh yang besar dan berat, rentan terhadap serangan predator dari atas.</item>
+        <!-- Kelemahan Euoplocephalus -->
+        <item>Mobilitas yang rendah karena tubuh yang besar dan berat, rentan terhadap serangan predator saat terjebak dalam posisi terlentang.</item>
+        <!-- Kelemahan Tyrannosaurus Rex -->
+        <item>Mobilitas yang rendah karena tubuh yang besar dan berat, rentan terhadap serangan dari sisi yang tidak terlindungi.</item>
+        <!-- Kelemahan Albertosaurus -->
+        <item>Ukuran tubuh yang lebih kecil membuatnya rentan terhadap serangan dari predator yang lebih besar, serta mobilitas yang terbatas dibandingkan dengan predator lainnya.</item>
+        <!-- Kelemahan Spinosaurus -->
+        <item>Kelemahan: Kehadiran sail di punggungnya bisa membuatnya rentan terhadap serangan dari predator lainnya.</item>
+        <!-- Kelemahan Baryonyx -->
+        <item>Kelemahan: Meskipun memiliki cakar yang besar, tubuhnya rentan terhadap serangan dari predator yang lebih besar dan lebih kuat.</item>
+        <!-- Kelemahan Diplodocus -->
+        <item>Tubuh yang panjang dan rentan terhadap serangan predator dari samping atau belakang.</item>
+        <!-- Kelemahan Apatosaurus -->
+        <item>Mobilitas yang rendah karena tubuh yang besar dan berat, rentan terhadap serangan predator saat berada di daerah yang terbatas untuk bergerak.</item>
+    </string-array>
+
+
+</resources>
