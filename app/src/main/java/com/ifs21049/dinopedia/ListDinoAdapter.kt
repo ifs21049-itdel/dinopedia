@@ -33,6 +33,6 @@ class ListDinoAdapter (private val ListDino: ArrayList<Dino>):
 
     class ListViewHolder(var binding: ItemRowDinoBinding) : RecyclerView.ViewHolder(binding.root)
     interface OnItemClickCallback {
-        fun onItemClicked(data: Family)
+        fun onItemClicked(data: Dino)
     }
 }

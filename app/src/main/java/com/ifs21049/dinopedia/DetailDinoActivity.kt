@@ -53,6 +53,8 @@ class DetailDinoActivity : AppCompatActivity() {
             resources.getStringArray(R.array.dino_height)
         val dataBobot =
             resources.getStringArray(R.array.dino_weight)
+        val datakelemahan =
+            resources.getStringArray(R.array.dino_weakness)
 
         val listDino = ArrayList<Dino>()
         for (i in dataName.indices) {
@@ -66,7 +68,8 @@ class DetailDinoActivity : AppCompatActivity() {
                 dataFood[i],
                 dataPanjang[i],
                 dataTinggi[i],
-                dataBobot[i])
+                dataBobot[i],
+                datakelemahan[i])
             listDino.add (dino)
         }
         return listDino
