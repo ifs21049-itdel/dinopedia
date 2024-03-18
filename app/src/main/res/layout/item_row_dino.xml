@@ -20,7 +20,7 @@
             app:srcCompat="@drawable/dino"
             tools:ignore="ImageContrastCheck" />
         <TextView
-            android:id="@+id/rvDino"
+            android:id="@+id/tvItemDino"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"

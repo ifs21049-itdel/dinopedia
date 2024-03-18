@@ -7,39 +7,46 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10sp"
         android:layout_marginTop="10sp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="horizontal">
 
         <TextView
+
+            android:text="Dino Pedia"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:id="@+id/textView"
             android:layout_width="326dp"
             android:layout_height="30sp"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="Dino Pedia"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:layout_weight="1"/>
 
         <ImageView
+
+            android:contentDescription="Person icon"
+            app:srcCompat="@drawable/baseline_person_24"
             android:id="@+id/btnUser"
             android:layout_width="48sp"
             android:layout_height="48sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:contentDescription="Person icon"
-            app:srcCompat="@drawable/baseline_person_24" />
+            android:clickable="true"/>
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_row_family"
         android:id="@+id/rvFamily"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,9 +54,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/item_row_family" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
