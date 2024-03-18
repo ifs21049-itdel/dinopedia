@@ -32,7 +32,7 @@ class DetailDinoActivity : AppCompatActivity() {
     }
 
     @SuppressLint("Recycle")
-    private fun getListDino(): ArrayList<Family> {
+    private fun getListDino(): ArrayList<Dino> {
         val dataName =
             resources.getStringArray(R.array.dino_species)
         val dataIcon =
@@ -81,10 +81,10 @@ class DetailDinoActivity : AppCompatActivity() {
                 LinearLayoutManager(this)
         }
         val listDinoAdapter = ListDinoAdapter(dataDino)
-        binding.rvFamily.adapter = listDinoAdapter
+        binding.rvDino.adapter = listDinoAdapter
         listDinoAdapter.setOnItemClickCallback(object :
             ListDinoAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Family) {
+            override fun onItemClicked(data: Dino) {
                 showSelectedDino(data)
             }
         })
