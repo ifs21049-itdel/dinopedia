@@ -16,7 +16,7 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailDinoActivity"
+            android:name=".DinoActivity"
             android:exported="false" />
         <activity
             android:name=".DetailActivity"

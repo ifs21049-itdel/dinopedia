@@ -1,8 +1,11 @@
 package com.ifs21049.dinopedia
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.ifs21049.dinopedia.databinding.ActivityDetailBinding
 
@@ -13,6 +16,13 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val btnDino = findViewById<TextView>(R.id.btnDino)
+        btnDino.setOnClickListener {
+            val intent = Intent(this, DinoDetailActivity::class.java)
+            startActivity(intent)
+        }
+
         family = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_FAMILY,Family::class.java)
         } else {

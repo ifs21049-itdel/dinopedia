@@ -8,10 +8,9 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ifs21049.dinopedia.databinding.ActivityDetailDinoBinding
 import com.ifs21049.dinopedia.databinding.ActivityDinoBinding
 
-class DetailDinoActivity : AppCompatActivity() {
+class DinoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDinoBinding
     private val dataDino = ArrayList<Dino>()
 
@@ -91,5 +90,13 @@ class DetailDinoActivity : AppCompatActivity() {
                 showSelectedDino(data)
             }
         })
+    }
+
+    private fun showSelectedDino(dino: Dino) {
+        val intentWithData = Intent(
+            this@DinoActivity,
+            DetailActivity::class.java)
+        intentWithData.putExtra (DinoDetailActivity.EXTRA_DINO, dino)
+        startActivity(intentWithData)
     }
 }
