@@ -54,19 +54,39 @@ class DetailDinoActivity : AppCompatActivity() {
         val dataBobot =
             resources.getStringArray(R.array.dino_weight)
 
-        val listFamily = ArrayList<Family>()
+        val listDino = ArrayList<Dino>()
         for (i in dataName.indices) {
-            val family = Family(
+            val dino = Dino(
                 dataName[i],
                 dataIcon.getResourceId(i, -1),
                 dataDescription[i],
-                dataPeriod[i],
-                dataPhysical[i],
+                dataKelompok[i],
+                dataKarakteristik[i],
                 dataHabitat[i],
-                dataBehavior[i],
-                dataClassification[i])
-            listFamily.add (family)
+                dataFood[i],
+                dataPanjang[i],
+                dataTinggi[i],
+                dataBobot[i])
+            listDino.add (dino)
         }
-        return listFamily
+        return listDino
+    }
+
+    private fun showRecyclerList() {
+        if (resources.configuration.orientation ==
+            Configuration.ORIENTATION_LANDSCAPE) { binding.rvDino.layoutManager =
+            GridLayoutManager(this, 2)
+        } else {
+            binding.rvDino.layoutManager =
+                LinearLayoutManager(this)
+        }
+        val listDinoAdapter = ListDinoAdapter(dataDino)
+        binding.rvFamily.adapter = listDinoAdapter
+        listDinoAdapter.setOnItemClickCallback(object :
+            ListDinoAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Family) {
+                showSelectedDino(data)
+            }
+        })
     }
 }
