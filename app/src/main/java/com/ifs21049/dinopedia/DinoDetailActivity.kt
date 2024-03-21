@@ -1,5 +1,6 @@
 package com.ifs21049.dinopedia
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
@@ -50,6 +51,7 @@ class DinoDetailActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
 
     companion object {
         const val EXTRA_DINO = "extra_dino"

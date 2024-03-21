@@ -23,6 +23,12 @@ class DetailActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnDino.setOnClickListener{
+            val intentWithData = Intent(this@DetailActivity, DinoActivity::class.java)
+            intentWithData.putExtra(DinoActivity.EXTRA_FAMILY, family!!)
+            startActivity(intentWithData)
+        }
+
         family = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_FAMILY,Family::class.java)
         } else {

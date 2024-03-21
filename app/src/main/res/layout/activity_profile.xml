@@ -10,7 +10,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="200dp"
         android:text="Profile"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -43,7 +43,8 @@
             android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Prodi"
+            android:text="Prodi: "
+            android:textAlignment="textEnd"
             android:textStyle="bold" />
 
         <TextView
@@ -70,7 +71,8 @@
             android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="NIM"
+            android:text="NIM: "
+            android:textAlignment="textEnd"
             android:textStyle="bold" />
 
         <TextView
@@ -98,7 +100,8 @@
             android:layout_width="61dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nama"
+            android:text="Nama: "
+            android:textAlignment="textEnd"
             android:textStyle="bold" />
 
         <TextView

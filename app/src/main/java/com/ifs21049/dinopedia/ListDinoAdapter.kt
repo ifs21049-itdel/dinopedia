@@ -21,9 +21,9 @@ class ListDinoAdapter (private val ListDino: ArrayList<Dino>):
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val family = ListDino[position]
-        holder.binding.ivItemDino.setImageResource(family.icon)
-        holder.binding.tvItemDino.text = family.name
+        val dino = ListDino[position]
+        holder.binding.ivItemDino.setImageResource(dino.icon)
+        holder.binding.tvItemDino.text = dino.name
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(ListDino[holder.adapterPosition])
         }

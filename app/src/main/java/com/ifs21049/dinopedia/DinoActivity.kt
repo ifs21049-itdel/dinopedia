@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Build
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -32,6 +33,16 @@ class DinoActivity : AppCompatActivity() {
 
     @SuppressLint("Recycle")
     private fun getListDino(): ArrayList<Dino> {
+        val family = if (Build.VERSION.SDK_INT >= 33) {
+            intent.getParcelableExtra(
+                EXTRA_FAMILY,
+                Family::class.java
+            )
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra(EXTRA_FAMILY)
+        }
+
         val dataName =
             resources.getStringArray(R.array.dino_species)
         val dataIcon =
@@ -55,8 +66,11 @@ class DinoActivity : AppCompatActivity() {
         val datakelemahan =
             resources.getStringArray(R.array.dino_weakness)
 
+        val startIndex = family?.startIndex
+        val endIndex = family?.endIndex
+
         val listDino = ArrayList<Dino>()
-        for (i in dataName.indices) {
+        for (i in startIndex!! .. endIndex!!) {
             val dino = Dino(
                 dataName[i],
                 dataIcon.getResourceId(i, -1),
@@ -84,6 +98,7 @@ class DinoActivity : AppCompatActivity() {
         }
         val listDinoAdapter = ListDinoAdapter(dataDino)
         binding.rvDino.adapter = listDinoAdapter
+
         listDinoAdapter.setOnItemClickCallback(object :
             ListDinoAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Dino) {
@@ -99,4 +114,9 @@ class DinoActivity : AppCompatActivity() {
         intentWithData.putExtra (DinoDetailActivity.EXTRA_DINO, dino)
         startActivity(intentWithData)
     }
+
+    companion object{
+        const val EXTRA_FAMILY = "extra_family"
+    }
+
 }

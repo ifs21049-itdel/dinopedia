@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity() {
             resources.getStringArray(R.array.family_behavior)
         val dataClassification =
             resources.getStringArray(R.array.family_classification)
+        val dataStartIndex =
+            resources.getStringArray(R.array.start_dino_array)
+        val dataEndIndex =
+            resources.getStringArray(R.array.end_dino_array)
 
         val listFamily = ArrayList<Family>()
         for (i in dataName.indices) {
@@ -59,7 +63,9 @@ class MainActivity : AppCompatActivity() {
                 dataPhysical[i],
                 dataHabitat[i],
                 dataBehavior[i],
-                dataClassification[i])
+                dataClassification[i],
+                dataStartIndex[i].toInt(),
+                dataEndIndex[i].toInt())
             listFamily.add (family)
         }
         return listFamily
@@ -73,9 +79,9 @@ class MainActivity : AppCompatActivity() {
             binding.rvFamily.layoutManager =
                 LinearLayoutManager(this)
         }
-        val listCloudAdapter = ListFamilyAdapter(dataFamily)
-        binding.rvFamily.adapter = listCloudAdapter
-        listCloudAdapter.setOnItemClickCallback(object :
+        val listFamilyAdapter = ListFamilyAdapter(dataFamily)
+        binding.rvFamily.adapter = listFamilyAdapter
+        listFamilyAdapter.setOnItemClickCallback(object :
             ListFamilyAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Family) {
                 showSelectedFamily(data)
